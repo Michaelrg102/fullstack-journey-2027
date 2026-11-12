@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pokémon</title>
+</head>
+<body>
+
+    <main>
+        <section id="formulario">
+            <h1>Formulário Pokémon</h1>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome:" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email:" required>
+
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" id="idade" min="10" max="80" placeholder="Digite sua Idade:" required>
+
+                <label for="pokemon">Escolha o seu Parceiro Pokémon:</label>
+                <select name="pokemon" id="pokemon">
+                    <option value="charmander">Charmander</option>
+                    <option value="bulbasaur">Bulbasaur</option>
+                    <option value="squirtle">Squirtle</option>
+                </select>
+
+                <label for="mensagem">Por que essa foi sua escolha?:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" cols="20"></textarea>
+
+                <h2>Região Inicial</h2>
+
+                <input type="radio" name="regiao" id="kanto" value="kanto">
+                <label for="kanto">Kanto</label>
+
+                <input type="radio" name="regiao" id="johto" value="johto">
+                <label for="johto">Johto</label>
+
+                <label for="confirmar">Você confirma os dados?</label>
+                <input type="checkbox" name="confirmar" id="confirmar">
+
+                <button type="submit">Enviar os Dados</button>
+                <button type="reset">Limpar os Dados</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>

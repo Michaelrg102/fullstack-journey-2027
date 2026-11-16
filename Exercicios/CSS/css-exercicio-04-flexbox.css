@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    
+}
+
+article{
+    display: flex;
+    padding: 80px;
+    border: 2px solid black;
+    flex-direction: column;
+    width: 250px;
+    text-align: center;
+}

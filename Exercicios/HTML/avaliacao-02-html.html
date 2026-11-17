@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="../CSS/avaliacao-01-css.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Pokédex</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#pokemon-container">Pokémon</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <section id="pokemon-container">
+
+            <article id="garchomp">
+                <h2>Garchomp #445</h2>
+                <h3>Tipo: Dragão / Terrestre</h3>
+
+                <img src="https://img.pokemondb.net/artwork/avif/garchomp.avif" alt="Garchomp">
+
+                <p>Garchomp é um Pokémon do tipo Dragão e Terrestre.</p>
+
+                <a href="https://pokemondb.net/pokedex/garchomp"
+                    target="_blank" rel="noopener noreferrer">Pokédex</a>
+            </article>
+
+            <article id="lucario">
+                <h2>Lucario #448</h2>
+                <h3>Tipo: Lutador / Aço</h3>
+
+                <img src="https://img.pokemondb.net/artwork/avif/lucario.avif" alt="Lucario">
+
+                <p>Lucario consegue perceber a aura.</p>
+
+                <a href="https://pokemondb.net/pokedex/lucario"
+                    target="_blank" rel="noopener noreferrer">Pokédex</a>
+            </article>
+
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Minha Pokédex de estudos.</p>
+        </section>
+
+        <section id="formulario">
+            <h2>Cadastro de treinador</h2>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+
+                <p>Região:</p>
+
+                <input type="radio" id="kanto" name="regiao">
+                <label for="kanto">Kanto</label>
+
+                <input type="radio" id="johto" name="regiao">
+                <label for="johto">Johto</label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Minha Pokédex 2026</p>
+    </footer>
+
+</body>
+</html>

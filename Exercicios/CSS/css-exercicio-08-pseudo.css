@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 255, 0);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+article {
+    position: relative;
+    border: 2px solid black;
+    padding: 20px;
+    transition:0.1s;
+}
+
+article:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.pokemon-tipo {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.aco {
+    background-color: rgb(180, 180, 181);
+}
+
+.agua {
+    background-color: rgb(0, 179, 255);
+}
+
+.dragao {
+    background-color: rgb(95, 108, 244);
+}
+
+.fada {
+    background-color: rgb(248, 91, 188);
+}
+
+.lutador {
+    background-color: rgb(248, 142, 92);
+}
+
+.pedra {
+    background-color: rgb(168, 110, 53);
+}
+
+
+.sombrio {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+.terrestre {
+    background-color: rgb(202, 130, 5);
+}
+
+
+
+.btn-topo {
+    background-color: blue;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    z-index: 2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+.btn-topo:active{
+    transform: scale(0.95);
+}
+
+input:focus{
+    border: 2px solid blue;
+    outline: none;
+
+}
+
+h2::before{
+    content: "⭐";
+}
+
+h2::after{
+    content: "🔥";
+}
+
+
+li:first-child{
+
+    color: red;
+}
+
+li:last-child{
+
+    color: yellow;
+}

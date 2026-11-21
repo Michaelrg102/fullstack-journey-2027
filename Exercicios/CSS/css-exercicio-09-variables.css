@@ -1,0 +1,192 @@
+/* =========================
+VARIÁVEIS
+========================= */
+
+:root{
+    --aco: rgb(180, 180, 181);
+    --agua: rgb(0, 179, 255);
+    --dragao: rgb(95, 108, 244);
+    --fada: rgb(248, 91, 188);
+    --lutador: rgb(248, 142, 92);
+    --pedra: rgb(168, 110, 53);
+    --sombrio: rgb(24, 24, 24);
+    --terrestre: rgb(202, 130, 5);
+
+    
+
+    --espaço: 20px;
+
+/* =========================
+    TEMA ESCURO
+========================= */
+
+    --cor-fundo: #000000;
+    --text: white;
+    
+}
+
+/* =========================
+RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* =========================
+CABEÇALHO
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* =========================
+   5. CONTEÚDO
+========================= */
+
+
+article {
+    position: relative;
+    border: 2px solid black;
+    padding: var(--espaço);
+    transition:0.1s;
+}
+
+article:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 255, 0);
+}
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espaço);
+    padding: var(--espaço);
+
+}
+
+.card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+}
+
+.pokemon-tipo {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.aco {
+    background-color: var(--aco);
+}
+
+.agua {
+    background-color: var(--agua);
+}
+
+.dragao {
+    background-color: var(--dragao);
+}
+
+.fada {
+    background-color: var(--fada);
+}
+
+.lutador {
+    background-color: var(--lutador);
+}
+
+.pedra {
+    background-color: var(--pedra);
+}
+
+
+.sombrio {
+    background-color: var(--sombrio);
+    color: white;
+}
+
+.terrestre {
+    background-color: var(--terrestre);
+}
+
+
+
+.btn-topo {
+    background-color: blue;
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    z-index: 2;
+    position: fixed;
+    bottom: var(--espaço);
+    right: var(--espaço);
+    
+}
+
+.btn-topo:active{
+    transform: scale(0.95);
+}
+
+input:focus{
+    border: 2px solid blue;
+    outline: none;
+
+}
+
+h2::before{
+    content: "⭐";
+}
+
+h2::after{
+    content: "🔥";
+}
+
+
+li:first-child{
+
+    color: var(--dragao);
+}
+
+li:last-child{
+
+    color: var(--sombrio);
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px){
+    .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaço);
+    padding: var(--espaço);
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaço);
+    padding: var(--espaço);
+    }
+}
